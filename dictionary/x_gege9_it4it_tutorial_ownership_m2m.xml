@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Completed Tutorials" max_length="40" name="x_gege9_it4it_tutorial_ownership_m2m" sizeclass="7206" type="collection">
+        <element default="true" label="Completed" max_length="40" name="completed" type="boolean"/>
+        <element label="Homepage Preference" max_length="32" name="homepage_preference" reference="x_gege9_it4it_homepage_preferences" type="reference"/>
+        <element label="Tutorial" max_length="32" name="tutorial" reference="x_gege9_it4it_tutorials" type="reference"/>
+        <index name="index">
+            <element name="homepage_preference"/>
+        </index>
+        <index name="index2">
+            <element name="tutorial"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="" label="Completed Tutorials" language="en" table="x_gege9_it4it_tutorial_ownership_m2m">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Completed Tutorials</label>
+            <language>en</language>
+            <name>x_gege9_it4it_tutorial_ownership_m2m</name>
+            <plural>Completed Tutorials</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>212607632</sys_created_by>
+            <sys_created_on>2018-03-14 15:21:47</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>63ae0256dbf85b80d087d8965e9619b2</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Completed Tutorials</sys_name>
+            <sys_package display_value="IT4IT" source="x_gege9_it4it">7938d16ddb64d300262950a45e9619c5</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="IT4IT">7938d16ddb64d300262950a45e9619c5</sys_scope>
+            <sys_update_name>sys_documentation_x_gege9_it4it_tutorial_ownership_m2m__en</sys_update_name>
+            <sys_updated_by>212607632</sys_updated_by>
+            <sys_updated_on>2018-03-14 15:48:30</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>getVTBColumns</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+	
+	var responseArr = [], error, columns;
+
+    columns = new GlideRecord('sys_dictionary');
+	var orQueryOne = columns.addQuery('name', request.pathParams.table);
+	orQueryOne.addOrCondition('name', 'task');
+	var orQueryTwo = columns.addQuery('internal_type', 'reference');
+	orQueryTwo.addOrCondition('internal_type', 'string');
+	orQueryTwo.addOrCondition('internal_type', 'integer');
+	columns.addQuery('element', 'DOES NOT CONTAIN', 'u_');
+	columns.addQuery('element', 'DOES NOT CONTAIN', 'sys_');
+	columns.addQuery('read_only', false);
+	columns.orderBy('column_label');
+	columns.query();
+	if(columns.hasNext()){
+		while(columns.next()){
+			responseArr.push({
+				'name': columns.column_label.toString(),
+				'sys_id': columns.sys_id.toString()
+			});
+		}
+		response.setBody(responseArr);
+		response.setStatus(200);
+	}else{
+		error = new sn_ws_err.ServiceError();
+		error.setStatus(404);
+		error.setMessage('There are no active data cards for this user.');
+		error.setDetail('User does not have data cards created.');
+		return error;
+	}
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_gege9_it4it/datacards/getVTBColumns/{table}</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/getVTBColumns/{table}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>212607632</sys_created_by>
+        <sys_created_on>2018-04-11 19:45:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3b119b93db119f40262950a45e9619ad</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>getVTBColumns</sys_name>
+        <sys_package display_value="IT4IT" source="x_gege9_it4it">7938d16ddb64d300262950a45e9619c5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="IT4IT">7938d16ddb64d300262950a45e9619c5</sys_scope>
+        <sys_update_name>sys_ws_operation_3b119b93db119f40262950a45e9619ad</sys_update_name>
+        <sys_updated_by>212607632</sys_updated_by>
+        <sys_updated_on>2018-04-12 11:20:46</sys_updated_on>
+        <web_service_definition display_value="DataCards">894d66f9dbe09700262950a45e96192f</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

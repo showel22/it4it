@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>activateDataCard</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    var dcGR, error;
+	var responseArr = [];
+	
+    dcGR = new GlideRecord('x_gege9_it4it_data_cards');
+	dcGR.addQuery('sys_id', request.pathParams.id);
+	dcGR.query();
+	if(dcGR.hasNext()){
+		dcGR.next();
+		dcGR.active = request.pathParams.value;
+		dcGR.update();
+	}else{
+		error = new sn_ws_err.ServiceError();
+		error.setStatus(404);
+		error.setMessage('Unable to find this card.');
+		error.setDetail('This card does not exist.');
+		return error;
+	}
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_gege9_it4it/datacards/activate/{id}/{value}</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/activate/{id}/{value}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>212607632</sys_created_by>
+        <sys_created_on>2018-03-12 13:14:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>01cb5b2ddb30df40262950a45e961963</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>activateDataCard</sys_name>
+        <sys_package display_value="IT4IT" source="x_gege9_it4it">7938d16ddb64d300262950a45e9619c5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="IT4IT">7938d16ddb64d300262950a45e9619c5</sys_scope>
+        <sys_update_name>sys_ws_operation_01cb5b2ddb30df40262950a45e961963</sys_update_name>
+        <sys_updated_by>212607632</sys_updated_by>
+        <sys_updated_on>2018-03-12 14:37:59</sys_updated_on>
+        <web_service_definition display_value="DataCards">894d66f9dbe09700262950a45e96192f</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>
