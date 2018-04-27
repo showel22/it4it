@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_gege9_it4it.HomepagePreferenceUtil</api_name>
+        <client_callable>false</client_callable>
+        <description>This script include will contain an API with all necesary functions to use with homepage preferences.</description>
+        <name>HomepagePreferenceUtil</name>
+        <script><![CDATA[var HomepagePreferenceUtil = Class.create();
+HomepagePreferenceUtil.prototype = {
+    initialize: function() {
+    },
+	create: function(){},
+	getByUser: function(){},
+    type: 'HomepagePreferenceUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>212607632</sys_created_by>
+        <sys_created_on>2018-04-23 12:16:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7ea36b43dba91340d087d8965e9619e5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>HomepagePreferenceUtil</sys_name>
+        <sys_package display_value="IT4IT" source="x_gege9_it4it">7938d16ddb64d300262950a45e9619c5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="IT4IT">7938d16ddb64d300262950a45e9619c5</sys_scope>
+        <sys_update_name>sys_script_include_7ea36b43dba91340d087d8965e9619e5</sys_update_name>
+        <sys_updated_by>212607632</sys_updated_by>
+        <sys_updated_on>2018-04-23 12:20:28</sys_updated_on>
+    </sys_script_include>
+</record_update>

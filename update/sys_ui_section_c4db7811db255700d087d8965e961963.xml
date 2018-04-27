@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="c4db7811db255700d087d8965e961963" sys_domain="global" table="x_gege9_it4it_data_cards" version="3" view="advanced_user">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_gege9_it4it_Datacard_Form_Instructions.xml</element>
+            <position>0</position>
+            <sys_created_by>212606938</sys_created_by>
+            <sys_created_on>2018-04-23 13:00:09</sys_created_on>
+            <sys_id>7add2b4fdba91340d087d8965e9619e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="DataCard Form Instructions">3e3e73d3db0dd740262950a45e96192f</sys_ui_formatter>
+            <sys_ui_section caption="NULL" display_value="" name="x_gege9_it4it_data_cards" sys_domain="global" view="83f1e2dbdb995f40262950a45e9619d1">c4db7811db255700d087d8965e961963</sys_ui_section>
+            <sys_updated_by>212606938</sys_updated_by>
+            <sys_updated_on>2018-04-23 13:00:09</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>1</position>
+            <sys_created_by>212606938</sys_created_by>
+            <sys_created_on>2018-04-23 13:00:09</sys_created_on>
+            <sys_id>bedd2b4fdba91340d087d8965e9619e7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_gege9_it4it_data_cards" sys_domain="global" view="83f1e2dbdb995f40262950a45e9619d1">c4db7811db255700d087d8965e961963</sys_ui_section>
+            <sys_updated_by>212606938</sys_updated_by>
+            <sys_updated_on>2018-04-23 13:00:09</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>2</position>
+            <sys_created_by>212606938</sys_created_by>
+            <sys_created_on>2018-04-23 13:00:09</sys_created_on>
+            <sys_id>32dd2b4fdba91340d087d8965e9619e8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_gege9_it4it_data_cards" sys_domain="global" view="83f1e2dbdb995f40262950a45e9619d1">c4db7811db255700d087d8965e961963</sys_ui_section>
+            <sys_updated_by>212606938</sys_updated_by>
+            <sys_updated_on>2018-04-23 13:00:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>table</element>
+            <position>3</position>
+            <sys_created_by>212606938</sys_created_by>
+            <sys_created_on>2018-04-23 13:00:09</sys_created_on>
+            <sys_id>b2dd2b4fdba91340d087d8965e9619e8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_gege9_it4it_data_cards" sys_domain="global" view="83f1e2dbdb995f40262950a45e9619d1">c4db7811db255700d087d8965e961963</sys_ui_section>
+            <sys_updated_by>212606938</sys_updated_by>
+            <sys_updated_on>2018-04-23 13:00:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>list_type</element>
+            <position>4</position>
+            <sys_created_by>212606938</sys_created_by>
+            <sys_created_on>2018-04-23 13:00:09</sys_created_on>
+            <sys_id>36dd2b4fdba91340d087d8965e9619e8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_gege9_it4it_data_cards" sys_domain="global" view="83f1e2dbdb995f40262950a45e9619d1">c4db7811db255700d087d8965e961963</sys_ui_section>
+            <sys_updated_by>212606938</sys_updated_by>
+            <sys_updated_on>2018-04-23 13:00:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>212606938</sys_created_by>
+            <sys_created_on>2018-04-23 13:00:09</sys_created_on>
+            <sys_id>b6dd2b4fdba91340d087d8965e9619e8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_gege9_it4it_data_cards" sys_domain="global" view="83f1e2dbdb995f40262950a45e9619d1">c4db7811db255700d087d8965e961963</sys_ui_section>
+            <sys_updated_by>212606938</sys_updated_by>
+            <sys_updated_on>2018-04-23 13:00:09</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>6</position>
+            <sys_created_by>212606938</sys_created_by>
+            <sys_created_on>2018-04-23 13:00:09</sys_created_on>
+            <sys_id>3add2b4fdba91340d087d8965e9619e8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_gege9_it4it_data_cards" sys_domain="global" view="83f1e2dbdb995f40262950a45e9619d1">c4db7811db255700d087d8965e961963</sys_ui_section>
+            <sys_updated_by>212606938</sys_updated_by>
+            <sys_updated_on>2018-04-23 13:00:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>order</element>
+            <position>7</position>
+            <sys_created_by>212606938</sys_created_by>
+            <sys_created_on>2018-04-23 13:00:09</sys_created_on>
+            <sys_id>badd2b4fdba91340d087d8965e9619e8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_gege9_it4it_data_cards" sys_domain="global" view="83f1e2dbdb995f40262950a45e9619d1">c4db7811db255700d087d8965e961963</sys_ui_section>
+            <sys_updated_by>212606938</sys_updated_by>
+            <sys_updated_on>2018-04-23 13:00:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>color</element>
+            <position>8</position>
+            <sys_created_by>212606938</sys_created_by>
+            <sys_created_on>2018-04-23 13:00:09</sys_created_on>
+            <sys_id>3edd2b4fdba91340d087d8965e9619e8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_gege9_it4it_data_cards" sys_domain="global" view="83f1e2dbdb995f40262950a45e9619d1">c4db7811db255700d087d8965e961963</sys_ui_section>
+            <sys_updated_by>212606938</sys_updated_by>
+            <sys_updated_on>2018-04-23 13:00:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>9</position>
+            <sys_created_by>212606938</sys_created_by>
+            <sys_created_on>2018-04-23 13:00:09</sys_created_on>
+            <sys_id>bedd2b4fdba91340d087d8965e9619e8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_gege9_it4it_data_cards" sys_domain="global" view="83f1e2dbdb995f40262950a45e9619d1">c4db7811db255700d087d8965e961963</sys_ui_section>
+            <sys_updated_by>212606938</sys_updated_by>
+            <sys_updated_on>2018-04-23 13:00:09</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>query_condition</element>
+            <position>10</position>
+            <sys_created_by>212606938</sys_created_by>
+            <sys_created_on>2018-04-23 13:00:09</sys_created_on>
+            <sys_id>32dd2b4fdba91340d087d8965e9619e9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_gege9_it4it_data_cards" sys_domain="global" view="83f1e2dbdb995f40262950a45e9619d1">c4db7811db255700d087d8965e961963</sys_ui_section>
+            <sys_updated_by>212606938</sys_updated_by>
+            <sys_updated_on>2018-04-23 13:00:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_gege9_it4it_data_cards</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>212607632</sys_created_by>
+            <sys_created_on>2018-04-17 13:32:54</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c4db7811db255700d087d8965e961963</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_gege9_it4it_data_cards</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="IT4IT" source="x_gege9_it4it">7938d16ddb64d300262950a45e9619c5</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="IT4IT">7938d16ddb64d300262950a45e9619c5</sys_scope>
+            <sys_update_name>sys_ui_section_c4db7811db255700d087d8965e961963</sys_update_name>
+            <sys_updated_by>212607632</sys_updated_by>
+            <sys_updated_on>2018-04-17 13:32:54</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Advanced User" name="advanced_user">83f1e2dbdb995f40262950a45e9619d1</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

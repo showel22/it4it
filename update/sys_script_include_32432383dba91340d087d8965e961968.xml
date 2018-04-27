@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_gege9_it4it.DataCardsUtil</api_name>
+        <client_callable>false</client_callable>
+        <description>This API will hold the basic logic for performing actions with datacards.</description>
+        <name>DataCardsUtil</name>
+        <script><![CDATA[var DataCardsUtil = Class.create();
+DataCardsUtil.prototype = {
+    initialize: function() {
+    },
+	// Creates a datacard
+	create: function(){},
+	
+	// Activate/deactivate a datacard given a sys_id and 
+	// the correct state and returns true is successful and
+	// false if unsuccessful.
+	activate: function(sys_id, active){
+		var dcGR = new GlideRecord('x_gege9_it4it_data_cards');
+		dcGR.addQuery('sys_id', sys_id);
+		dcGR.query();
+		if(dcGR.hasNext()){
+			dcGR.next();
+			dcGR.active = active;
+			dcGR.update();
+			return true;
+		}else{
+			return false;
+		}
+	},
+	
+	// Shares a datacard to a group
+	ShareToGroup: function(){},
+	
+	// Returns a datacard that matches the given sys_id
+	// or false if no datacard is found.
+	getById: function(sys_id){
+		var dcGR = new GlideRecord('x_gege9_it4it_data_cards');
+		dcGR.addQuery('sys_id', request.pathParams.sys_id);
+		dcGR.orderBy('order');
+		dcGR.query();
+		if(dcGR.hasNext()){
+			dcGR.next();
+			return dcGR;
+		}else{
+			return false;
+		}
+	},
+	
+	// Returns all datacards that matches a given homepage preference.
+	// or false if there are none.
+	getByPreference: function(){
+		var dcGR = new GlideRecord('x_gege9_it4it_data_cards');
+		dcGR.addQuery('homepage_preference', request.pathParams.homepagePreference);
+		dcGR.orderBy('order');
+		dcGR.query();
+		if(dcGR.hasNext()){
+			return dcGR;
+		}else{
+			return false;
+		}
+	},
+	// Returns all of the default datacards
+	getDefault: function(){},
+    type: 'DataCardsUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>212607632</sys_created_by>
+        <sys_created_on>2018-04-23 12:15:28</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>32432383dba91340d087d8965e961968</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>DataCardsUtil</sys_name>
+        <sys_package display_value="IT4IT" source="x_gege9_it4it">7938d16ddb64d300262950a45e9619c5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="IT4IT">7938d16ddb64d300262950a45e9619c5</sys_scope>
+        <sys_update_name>sys_script_include_32432383dba91340d087d8965e961968</sys_update_name>
+        <sys_updated_by>212607632</sys_updated_by>
+        <sys_updated_on>2018-04-23 13:10:47</sys_updated_on>
+    </sys_script_include>
+</record_update>
