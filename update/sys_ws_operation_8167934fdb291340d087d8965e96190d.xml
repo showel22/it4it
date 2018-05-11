@@ -24,12 +24,15 @@
 			datacardGR.next();
 			var groupMemberGR = new GlideRecord('sys_user_grmember');
 			groupMemberGR.addQuery('group', groupGR.sys_id);
+			groupMemberGR.addQuery('user', '!=', datacardGR.homepage_preference.user);
 			groupMemberGR.query();
 			if(groupMemberGR.hasNext()){
 				while(groupMemberGR.next()){
 					var preferenceGR = new GlideRecord('x_gege9_it4it_homepage_preferences');
 					preferenceGR.addQuery('user', groupMemberGR.user);
+					preferenceGR.query();
 					if(preferenceGR.hasNext()){
+						preferenceGR.next();
 						newDatacardGR = new GlideRecord('x_gege9_it4it_data_cards');
 						newDatacardGR.initialize();
 						newDatacardGR.homepage_preference = preferenceGR.sys_id;
@@ -47,7 +50,7 @@
 						var hpGR = new GlideRecord('x_gege9_it4it_homepage_preferences');
 						hpGR.initialize();
 						hpGR.active = true;
-						hpGR.user = request.pathParams.userID;
+						hpGR.user = groupMemberGR.user;
 						hpGR.insert();
 						newDatacardGR = new GlideRecord('x_gege9_it4it_data_cards');
 						newDatacardGR.initialize();
@@ -103,7 +106,7 @@
         <sys_created_on>2018-04-23 11:30:11</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>8167934fdb291340d087d8965e96190d</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Share to Group</sys_name>
         <sys_package display_value="IT4IT" source="x_gege9_it4it">7938d16ddb64d300262950a45e9619c5</sys_package>
         <sys_policy/>
@@ -111,7 +114,7 @@
         <sys_scope display_value="IT4IT">7938d16ddb64d300262950a45e9619c5</sys_scope>
         <sys_update_name>sys_ws_operation_8167934fdb291340d087d8965e96190d</sys_update_name>
         <sys_updated_by>212607632</sys_updated_by>
-        <sys_updated_on>2018-04-27 11:31:55</sys_updated_on>
+        <sys_updated_on>2018-05-10 11:15:40</sys_updated_on>
         <web_service_definition display_value="DataCards">894d66f9dbe09700262950a45e96192f</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>

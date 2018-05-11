@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>false</client>
+        <comments>Used to delete a shared card they dont want.</comments>
+        <condition>current.state == 100 &amp;&amp; current.homepage_preference.user == gs.getUserID()</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_context_menu>true</form_context_menu>
+        <form_link>true</form_link>
+        <form_style/>
+        <hint/>
+        <list_action>true</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>true</list_choice>
+        <list_context_menu>true</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Reject Shared Card</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[current.deleteRecord();]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>212607632</sys_created_by>
+        <sys_created_on>2018-05-11 15:44:36</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4f10414ddbca5740d087d8965e9619bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reject Shared Card</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="IT4IT" source="x_gege9_it4it">7938d16ddb64d300262950a45e9619c5</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="IT4IT">7938d16ddb64d300262950a45e9619c5</sys_scope>
+        <sys_update_name>sys_ui_action_4f10414ddbca5740d087d8965e9619bf</sys_update_name>
+        <sys_updated_by>212607632</sys_updated_by>
+        <sys_updated_on>2018-05-11 15:44:36</sys_updated_on>
+        <table>x_gege9_it4it_data_cards</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>
