@@ -16,11 +16,13 @@
             <choice>
                 <element label="Standard List" value="standard"/>
                 <element label="Visual Task Board" sequence="100" value="vtb"/>
+                <element label="Report" sequence="200" value="report"/>
             </choice>
         </element>
         <element label="Name" mandatory="true" max_length="40" name="name" type="string"/>
         <element default="0" label="Order" max_length="40" name="order" type="integer"/>
         <element dependent="table" dependent_on_field="table" label="Query Condition" mandatory="true" max_length="4000" name="query_condition" type="conditions" use_dependent_field="true"/>
+        <element label="Report" max_length="32" name="report" reference="sys_report_users_groups" reference_qual="group_idDYNAMICd6435e965f510100a9ad2572f2b47744^ORuser_idDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ" reference_qual_condition="group_idDYNAMICd6435e965f510100a9ad2572f2b47744^ORuser_idDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ" type="reference"/>
         <element choice="1" label="State" max_length="40" name="state" type="choice">
             <choice>
                 <element label="Accepted" value="200"/>
@@ -31,6 +33,9 @@
         <element dependent="table" dependent_on_field="table" label="Visual Task Board Lane Field" max_length="80" name="vtb_lane_field" type="field_name" use_dependent_field="true"/>
         <index name="index">
             <element name="homepage_preference"/>
+        </index>
+        <index name="index2">
+            <element name="report"/>
         </index>
     </element>
 </database>

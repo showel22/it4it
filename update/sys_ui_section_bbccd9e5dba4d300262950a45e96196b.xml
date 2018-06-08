@@ -211,6 +211,20 @@
             <sys_user/>
             <type/>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>report</element>
+            <position>15</position>
+            <sys_created_by>212607632</sys_created_by>
+            <sys_created_on>2018-06-05 12:55:26</sys_created_on>
+            <sys_id>b82989c9dba61340d087d8965e96191d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_gege9_it4it_data_cards" sys_domain="global" view="Default view">bbccd9e5dba4d300262950a45e96196b</sys_ui_section>
+            <sys_updated_by>212607632</sys_updated_by>
+            <sys_updated_on>2018-06-05 12:55:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>
