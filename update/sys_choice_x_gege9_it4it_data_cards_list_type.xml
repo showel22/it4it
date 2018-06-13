@@ -48,14 +48,14 @@
             <language>en</language>
             <name>x_gege9_it4it_data_cards</name>
             <sequence>200</sequence>
-            <sys_created_by>212607632</sys_created_by>
-            <sys_created_on>2018-06-05 16:13:30</sys_created_on>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-06-08 17:28:46</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>01667581dba25340d087d8965e961964</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_updated_by>212607632</sys_updated_by>
-            <sys_updated_on>2018-06-05 16:13:47</sys_updated_on>
+            <sys_id>ca74e906db2e5308e718d54b5e96193d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-06-08 17:28:46</sys_updated_on>
             <value>report</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
