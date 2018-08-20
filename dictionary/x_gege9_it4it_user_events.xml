@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="User Events" max_length="40" name="x_gege9_it4it_user_events" type="collection">
+        <element label="Action" max_length="120" name="action" type="string"/>
+        <element label="Category" max_length="120" name="category" type="string"/>
+        <element label="Label" max_length="120" name="label" type="string"/>
+        <element label="Meta Data" max_length="10000" name="meta_data" type="string"/>
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element label="Value" max_length="120" name="value" type="string"/>
+        <index name="index">
+            <element name="user"/>
+        </index>
+    </element>
+</database>
