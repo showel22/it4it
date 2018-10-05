@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Headline" max_length="40" name="x_gege9_it4it_headline" type="collection">
+        <element label="Expriation Date/Time" max_length="40" name="expriation_date_time" type="glide_date_time"/>
+        <element label="Header" max_length="70" name="header" type="string"/>
+        <element label="Hyperlink" max_length="1024" name="hyperlink" type="url"/>
+        <element label="Tag Line" max_length="140" name="tag_line" type="string"/>
+    </element>
+</database>
