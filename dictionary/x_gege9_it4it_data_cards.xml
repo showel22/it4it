@@ -1,22 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="hasLabels=true" label="Data Cards" max_length="40" name="x_gege9_it4it_data_cards" sizeclass="6296" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
         <element choice="3" default="Blue" label="Color" max_length="40" name="color" type="choice">
             <choice>
-                <element label="Blue" value="Blue"/>
-                <element label="Green" value="Green"/>
-                <element label="Red" value="Red"/>
-                <element label="Yellow" value="Yellow"/>
+                <element inactive_on_update="false" label="Blue" value="Blue"/>
+                <element inactive_on_update="false" label="Green" value="Green"/>
+                <element inactive_on_update="false" label="Red" value="Red"/>
+                <element inactive_on_update="false" label="Yellow" value="Yellow"/>
             </choice>
         </element>
         <element label="Default" max_length="40" name="default" type="boolean"/>
         <element label="Homepage Preference" max_length="32" name="homepage_preference" reference="x_gege9_it4it_homepage_preferences" type="reference"/>
         <element choice="3" default="standard" label="List Type" max_length="40" name="list_type" type="choice">
             <choice>
-                <element label="Standard List" value="standard"/>
-                <element label="Visual Task Board" sequence="100" value="vtb"/>
-                <element label="Report" sequence="200" value="report"/>
+                <element inactive_on_update="false" label="Standard List" value="standard"/>
+                <element inactive_on_update="false" label="Visual Task Board" sequence="100" value="vtb"/>
+                <element inactive_on_update="false" label="Report" sequence="200" value="report"/>
             </choice>
         </element>
         <element label="Name" mandatory="true" max_length="40" name="name" type="string"/>
@@ -25,8 +24,8 @@
         <element label="Report" max_length="32" name="report" reference="sys_report_users_groups" reference_qual="group_idDYNAMICd6435e965f510100a9ad2572f2b47744^ORuser_idDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ" reference_qual_condition="group_idDYNAMICd6435e965f510100a9ad2572f2b47744^ORuser_idDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ" type="reference"/>
         <element choice="1" label="State" max_length="40" name="state" type="choice">
             <choice>
-                <element label="Accepted" value="200"/>
-                <element label="Shared" value="100"/>
+                <element inactive_on_update="false" label="Accepted" value="200"/>
+                <element inactive_on_update="false" label="Shared" value="100"/>
             </choice>
         </element>
         <element attributes="base_table=task,text_search_only=true" label="Table" max_length="80" name="table" type="table_name"/>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_list parent="content_css" relationship="67bdac52374010008687ddb1967334ee" sys_domain="global" table="sys_update_version" version="2" view="">
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>

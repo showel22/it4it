@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_push_notif_app_install">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_push_notif_app_install">
     <sys_push_notif_app_install action="INSERT_OR_UPDATE">
         <active>false</active>
         <last_registered_on>2018-04-18 13:34:39</last_registered_on>

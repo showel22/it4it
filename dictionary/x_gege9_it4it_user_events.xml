@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
+<?xml version="1.0" encoding="UTF-8"?><database>
     <element label="User Events" max_length="40" name="x_gege9_it4it_user_events" sizeclass="8255" type="collection">
         <element label="Action" max_length="120" name="action" type="string"/>
         <element label="Category" max_length="120" name="category" type="string"/>

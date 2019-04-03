@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_ui_script">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_script">
     <sys_ui_script action="INSERT_OR_UPDATE">
         <active>true</active>
         <description>This will hold all the Javascript for the datacard form app.</description>
@@ -268,6 +267,7 @@
         <sys_update_name>sys_ui_script_94cba19bdb915f40262950a45e961946</sys_update_name>
         <sys_updated_by>212607632</sys_updated_by>
         <sys_updated_on>2018-06-06 11:23:47</sys_updated_on>
+        <ui_type>0</ui_type>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>

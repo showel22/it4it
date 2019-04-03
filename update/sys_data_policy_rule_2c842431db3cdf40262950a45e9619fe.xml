@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_data_policy_rule">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule">
     <sys_data_policy_rule action="INSERT_OR_UPDATE">
         <disabled>ignore</disabled>
         <field>vtb_lane_field</field>

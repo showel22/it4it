@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_dictionary action="INSERT_OR_UPDATE" element="expriation_date_time" table="x_gege9_it4it_headline">
         <active>true</active>
         <array>false</array>
@@ -55,7 +54,7 @@
         <sys_created_by>212607632</sys_created_by>
         <sys_created_on>2018-10-01 14:19:05</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>6ac749cfdb786340262950a45e9619e7</sys_id>
+        <sys_id>98acd21cdb456300c13adffa5e961980</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Expriation Date/Time</sys_name>
         <sys_package display_value="IT4IT" source="x_gege9_it4it">7938d16ddb64d300262950a45e9619c5</sys_package>
@@ -63,8 +62,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="IT4IT">7938d16ddb64d300262950a45e9619c5</sys_scope>
         <sys_update_name>sys_dictionary_x_gege9_it4it_headline_expriation_date_time</sys_update_name>
-        <sys_updated_by>212607632</sys_updated_by>
-        <sys_updated_on>2018-10-01 14:19:05</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-10-05 17:41:49</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
