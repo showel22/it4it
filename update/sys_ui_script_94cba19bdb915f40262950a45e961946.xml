@@ -8,10 +8,10 @@
 
 (function(){
 	'use strict';
-
+	
 	function recordHandler(){
 		var thisRecord = g_form.getUniqueValue();
-
+		
 		var url = '/api/x_gege9_it4it/datacards/getById/' + thisRecord;
 		sendRequestToSNV2('get', url).then((response) => {
 			var result = JSON.parse(response.responseText).result;
@@ -28,7 +28,22 @@
 			}
 			document.getElementById('dataCardPreviewContainer').classList = 
 				'row it4it-cat-container col-xs-offset-2 col-xs-8 ' + result.color + '-cat';
-
+			var tableSelector = document.getElementById('dataCardTables');
+			for(var i = 0; i < tableSelector.options.length; i++){
+				if(tableSelector.options[i].value === result.table){
+					tableSelector.selectedIndex = i;
+					var realTableField = document.getElementById('x_gege9_it4it_data_cards.table');
+					for(var j = 0; j < realTableField.options.length; j++){
+						if(realTableField.options[j].value === tableSelector.options[i].value){
+							realTableField.selectedIndex = j;
+							break;
+						}
+					}
+					loadFilterColumns('x_gege9_it4it_data_cards.query_condition', 'table');
+					break;
+				}
+			}
+			
 			var viewSelector = document.getElementById('datacardViewType');
 			for(var i = 0; i < viewSelector.options.length; i++){
 				if(viewSelector.options[i].value === result.list_type){
@@ -69,7 +84,7 @@
 			document.getElementById('dcSimpleForm').style="display:block;";
 		});
 	}
-
+	
 	function nameHandler(){
 		var nameEl = document.getElementById('datacardName');
 		nameEl.addEventListener('input', (event) => {
@@ -78,7 +93,7 @@
 			document.getElementById('dataCardNameDisplay').innerHTML = value;
 		});
 	}
-
+	
 	function orderHandler(){
 		var orderEl = document.getElementById('datacardOrder');
 		orderEl.addEventListener('input', (event) => {
@@ -86,7 +101,7 @@
 			document.getElementById('x_gege9_it4it_data_cards.order').value = value;
 		});
 	}
-
+	
 	function colorHandler(){
 		var colorEl = document.getElementById('datacardColor');
 		colorEl.addEventListener('change', (event) => {
@@ -101,7 +116,7 @@
 			document.getElementById('dataCardPreviewContainer').classList = 'row it4it-cat-container col-xs-offset-2 col-xs-8 ' + value + '-cat';
 		});
 	}
-
+	
 	function tableHandler(){
 		var tableField = document.getElementById('dataCardTables');
 		tableField.addEventListener('change', (event) => {
@@ -113,12 +128,12 @@
 					break;
 				}
 			}
-			//loadFilterColumns('x_gege9_it4it_data_cards.query_condition', 'table');
-			//loadFields('x_gege9_it4it_data_cards.vtb_lane_field', 'table', '', '', '', '', '', '', 'false', 'x_gege9_it4it_data_cards');
+			loadFilterColumns('x_gege9_it4it_data_cards.query_condition', 'table');
+			loadFields('x_gege9_it4it_data_cards.vtb_lane_field', 'table', '', '', '', '', '', '', 'false', 'x_gege9_it4it_data_cards');
 			loadTableFields(value);
 		});
 	}
-
+	
 	function viewTypeHandler(){
 		var viewField = document.getElementById('datacardViewType');
 		viewField.addEventListener('change', (event) => {
@@ -158,14 +173,14 @@
 			loadTableFields(tableField.options[tableField.selectedIndex].value);
 		});
 	}
-
+	
 	function queryHandler(){
 		var queryField = document.getElementById('x_gege9_it4it_data_cards.query_condition');
 		queryField.addEventListener('change', (event) => {
 			console.log(event.target.value);
 		});
 	}
-
+	
 	function vtbFieldHandler(){
 		var vtbField = document.getElementById('datacardVTBField');
 		vtbField.addEventListener('change', (event) => {
@@ -179,7 +194,7 @@
 			}
 		});
 	}
-
+	
 	function loadTables(){
 		var url = '/api/now/v1/vtb/task_tables';
 		sendRequestToSNV2('get', url).then((response) => {
@@ -189,32 +204,17 @@
 				selectEl.innerHTML += '<option value="'+ property +'">'+ result[property] +'</option>';
 			}
 			var realTableField = document.getElementById('x_gege9_it4it_data_cards.table');
-			loadTableFields(result.table);
-
-
-			var thisRecord = g_form.getUniqueValue();
-			var url = '/api/x_gege9_it4it/datacards/getById/' + thisRecord;
-			sendRequestToSNV2('get', url).then((response) => {
-				var result = JSON.parse(response.responseText).result;
-
-				var tableSelector = document.getElementById('dataCardTables');
-
-				for(var i = 0; i < tableSelector.options.length; i++){
-					if(tableSelector.options[i].value === result.table){
-						tableSelector.selectedIndex = i;
-						for(var j = 0; j < realTableField.options.length; j++){
-							if(realTableField.options[j].value === tableSelector.options[i].value){
-								realTableField.selectedIndex = j;
-								break;
-							}
-						}
-						break;
-					}
+			for(var i = 0; i < realTableField.options.length; i++){
+				if(realTableField.options[i].value === selectEl.options[selectEl.selectedIndex].value){
+					realTableField.selectedIndex = i;
+					break;
 				}
-			});
+			}
+			loadFilterColumns('x_gege9_it4it_data_cards.query_condition', 'table');
+			loadTableFields(result.table);
 		});
 	}
-
+	
 	function loadTableFields(table, value){
 		var url = 'api/now/v1/vtb/table_lane_options?table=' + table;
 		sendRequestToSNV2('get', url).then((response) => {
@@ -232,8 +232,8 @@
 			}
 		});
 	}
-
-
+	
+	
 	document.addEventListener('DOMContentLoaded', () => {
 		document.getElementById('element.x_gege9_it4it_data_cards.table').style.display = 'none';
 		document.getElementById('element.x_gege9_it4it_data_cards.color').style.display = 'none';
@@ -250,7 +250,6 @@
 		vtbFieldHandler();
 		loadTables();
 		recordHandler();
-		loadFilterColumns('x_gege9_it4it_data_cards.query_condition', 'table');
 	});
 }());]]></script>
         <script_name>DatacardFormApp</script_name>
@@ -259,15 +258,15 @@
         <sys_created_on>2018-04-11 11:55:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>94cba19bdb915f40262950a45e961946</sys_id>
-        <sys_mod_count>154</sys_mod_count>
+        <sys_mod_count>155</sys_mod_count>
         <sys_name>x_gege9_it4it.DatacardFormApp</sys_name>
         <sys_package display_value="IT4IT" source="x_gege9_it4it">7938d16ddb64d300262950a45e9619c5</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="IT4IT">7938d16ddb64d300262950a45e9619c5</sys_scope>
         <sys_update_name>sys_ui_script_94cba19bdb915f40262950a45e961946</sys_update_name>
-        <sys_updated_by>212743449</sys_updated_by>
-        <sys_updated_on>2019-05-01 13:25:04</sys_updated_on>
+        <sys_updated_by>212680595</sys_updated_by>
+        <sys_updated_on>2019-05-17 18:26:45</sys_updated_on>
         <ui_type>0</ui_type>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
