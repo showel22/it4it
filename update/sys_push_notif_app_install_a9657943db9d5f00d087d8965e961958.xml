@@ -11,7 +11,7 @@
         <sys_name>cd2e8ed62766ea315d998095ed689c2c940648d11efc55b03e874fe706ce1ba9</sys_name>
         <sys_package display_value="IT4IT" source="x_gege9_it4it">7938d16ddb64d300262950a45e9619c5</sys_package>
         <sys_policy/>
-        <sys_push_application_id display_value="ServiceNow Mobile Application">ab704041ff1102009738ffffffffff33</sys_push_application_id>
+        <sys_push_application_id display_value="ServiceNow Classic Mobile Application">ab704041ff1102009738ffffffffff33</sys_push_application_id>
         <sys_push_platform_id display_value="Apple">20e71f30ff0002009738ffffffffff6b</sys_push_platform_id>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="IT4IT">7938d16ddb64d300262950a45e9619c5</sys_scope>
