@@ -14,7 +14,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Report</column_label>
+        <column_label>Shared Report</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -58,15 +58,15 @@
         <sys_created_on>2018-06-05 12:55:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>8a74e906db2e5308e718d54b5e96193e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Report</sys_name>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Shared Report</sys_name>
         <sys_package display_value="IT4IT" source="x_gege9_it4it">7938d16ddb64d300262950a45e9619c5</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="IT4IT">7938d16ddb64d300262950a45e9619c5</sys_scope>
         <sys_update_name>sys_dictionary_x_gege9_it4it_data_cards_report</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2019-07-12 17:43:12</sys_updated_on>
+        <sys_updated_by>212613457</sys_updated_by>
+        <sys_updated_on>2019-10-24 16:37:54</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

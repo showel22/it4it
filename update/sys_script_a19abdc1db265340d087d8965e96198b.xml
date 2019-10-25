@@ -15,9 +15,12 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_gege9_it4it_data_cards">list_typeCHANGESTOreport^ORlist_type=report^reportISNOTEMPTY^EQ<item endquery="false" field="list_type" goto="false" newquery="false" operator="CHANGESTO" or="false" value="report"/>
+        <filter_condition table="x_gege9_it4it_data_cards">list_typeCHANGESTOreport^ORlist_type=report^reportISNOTEMPTY^NQlist_typeCHANGESTOgeneral_report^ORlist_type=general_report^general_reportISNOTEMPTY^EQ<item endquery="false" field="list_type" goto="false" newquery="false" operator="CHANGESTO" or="false" value="report"/>
             <item endquery="false" field="list_type" goto="false" newquery="false" operator="=" or="true" value="report"/>
             <item endquery="false" field="report" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="list_type" goto="false" newquery="true" operator="CHANGESTO" or="false" value="general_report"/>
+            <item endquery="false" field="list_type" goto="false" newquery="false" operator="=" or="true" value="general_report"/>
+            <item endquery="false" field="general_report" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
@@ -32,15 +35,19 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	gs.info(current.report.report_id.sys_id);
+	
 	var gr = new GlideRecord('sys_report');
-	gr.addQuery('sys_id', current.report.report_id.sys_id);
+	if(current.list_type == 'report'){
+		gr.addQuery('sys_id', current.report.report_id.sys_id);
+	}else if(current.list_type == 'general_report'){
+		gr.addQuery('sys_id', current.general_report.sys_id);
+	}
+	
 	gr.query();
 	gr.next();
-	gs.info(gr.title);
 	current.table = gr.table;
 	current.query_condition = gr.filter;
-
+	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>212607632</sys_created_by>
@@ -49,7 +56,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a19abdc1db265340d087d8965e96198b</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Populate Table and Query from Report</sys_name>
         <sys_overrides/>
         <sys_package display_value="IT4IT" source="x_gege9_it4it">7938d16ddb64d300262950a45e9619c5</sys_package>
@@ -57,8 +64,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="IT4IT">7938d16ddb64d300262950a45e9619c5</sys_scope>
         <sys_update_name>sys_script_a19abdc1db265340d087d8965e96198b</sys_update_name>
-        <sys_updated_by>212607632</sys_updated_by>
-        <sys_updated_on>2018-06-05 18:36:03</sys_updated_on>
+        <sys_updated_by>212613457</sys_updated_by>
+        <sys_updated_on>2019-10-24 17:22:24</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

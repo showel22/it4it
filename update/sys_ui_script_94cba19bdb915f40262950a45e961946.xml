@@ -51,6 +51,7 @@
 					if(viewSelector.options[i].value === 'vtb'){
 						document.getElementById('element.x_gege9_it4it_data_cards.query_condition').style.display = 'block';
 						document.getElementById('element.x_gege9_it4it_data_cards.report').style.display = 'none';
+						document.getElementById('element.x_gege9_it4it_data_cards.general_report').style.display = 'none';
 						document.getElementById('datacardVTBFieldGroup').style.display = 'block';
 						document.getElementById('tableFieldGroup').style.display = 'block';
 						document.getElementById('standardListSample').style.display = 'none';
@@ -60,6 +61,16 @@
 					}else if(viewSelector.options[i].value === 'report'){
 						document.getElementById('element.x_gege9_it4it_data_cards.query_condition').style.display = 'none';
 						document.getElementById('element.x_gege9_it4it_data_cards.report').style.display = 'block';
+						document.getElementById('element.x_gege9_it4it_data_cards.general_report').style.display = 'none';
+						document.getElementById('datacardVTBFieldGroup').style.display = 'none';
+						document.getElementById('tableFieldGroup').style.display = 'none';
+						document.getElementById('vtbListSample').style.display = 'none';
+						document.getElementById('standardListSample').style.display = 'block';
+						g_form.setMandatory('query', false);
+					}else if(viewSelector.options[i].value === 'general_report'){//Val added this block for general_report field
+						document.getElementById('element.x_gege9_it4it_data_cards.query_condition').style.display = 'none';
+						document.getElementById('element.x_gege9_it4it_data_cards.report').style.display = 'none';
+						document.getElementById('element.x_gege9_it4it_data_cards.general_report').style.display = 'block';
 						document.getElementById('datacardVTBFieldGroup').style.display = 'none';
 						document.getElementById('tableFieldGroup').style.display = 'none';
 						document.getElementById('vtbListSample').style.display = 'none';
@@ -68,6 +79,7 @@
 					}else{
 						document.getElementById('element.x_gege9_it4it_data_cards.query_condition').style.display = 'block';
 						document.getElementById('element.x_gege9_it4it_data_cards.report').style.display = 'none';
+						document.getElementById('element.x_gege9_it4it_data_cards.general_report').style.display = 'none';
 						document.getElementById('datacardVTBFieldGroup').style.display = 'none';
 						document.getElementById('vtbListSample').style.display = 'none';
 						document.getElementById('tableFieldGroup').style.display = 'block';
@@ -140,6 +152,7 @@
 			if(event.target.options[event.target.selectedIndex].value === 'vtb'){
 				document.getElementById('element.x_gege9_it4it_data_cards.query_condition').style.display = 'block';
 				document.getElementById('element.x_gege9_it4it_data_cards.report').style.display = 'none';
+				document.getElementById('element.x_gege9_it4it_data_cards.general_report').style.display = 'none';
 				document.getElementById('datacardVTBFieldGroup').style.display = 'block';
 				document.getElementById('tableFieldGroup').style.display = 'block';
 				document.getElementById('standardListSample').style.display = 'none';
@@ -148,6 +161,16 @@
 			}else if(event.target.options[event.target.selectedIndex].value === 'report'){
 				document.getElementById('element.x_gege9_it4it_data_cards.query_condition').style.display = 'none';
 				document.getElementById('element.x_gege9_it4it_data_cards.report').style.display = 'block';
+				document.getElementById('element.x_gege9_it4it_data_cards.general_report').style.display = 'none';
+				document.getElementById('tableFieldGroup').style.display = 'none';
+				document.getElementById('datacardVTBFieldGroup').style.display = 'none';
+				document.getElementById('vtbListSample').style.display = 'none';
+				document.getElementById('standardListSample').style.display = 'block';
+				g_form.setMandatory('query_condition', false);
+			}else if(event.target.options[event.target.selectedIndex].value === 'general_report'){//this block for general_report field
+				document.getElementById('element.x_gege9_it4it_data_cards.query_condition').style.display = 'none';
+				document.getElementById('element.x_gege9_it4it_data_cards.report').style.display = 'none';
+				document.getElementById('element.x_gege9_it4it_data_cards.general_report').style.display = 'block';
 				document.getElementById('tableFieldGroup').style.display = 'none';
 				document.getElementById('datacardVTBFieldGroup').style.display = 'none';
 				document.getElementById('vtbListSample').style.display = 'none';
@@ -156,6 +179,7 @@
 			}else{
 				document.getElementById('element.x_gege9_it4it_data_cards.query_condition').style.display = 'block';
 				document.getElementById('element.x_gege9_it4it_data_cards.report').style.display = 'none';
+				document.getElementById('element.x_gege9_it4it_data_cards.general_report').style.display = 'none';
 				document.getElementById('datacardVTBFieldGroup').style.display = 'none';
 				document.getElementById('vtbListSample').style.display = 'none';
 				document.getElementById('tableFieldGroup').style.display = 'block';
@@ -265,6 +289,7 @@
 		document.getElementById('element.x_gege9_it4it_data_cards.order').style.display = 'none';
 		document.getElementById('element.x_gege9_it4it_data_cards.vtb_lane_field').style.display = 'none';
 		document.getElementById('element.x_gege9_it4it_data_cards.report').style.display = 'none';
+		document.getElementById('element.x_gege9_it4it_data_cards.general_report').style.display = 'none';//added for general_report field
 		nameHandler();
 		orderHandler();
 		colorHandler();
@@ -281,15 +306,15 @@
         <sys_created_on>2018-04-11 11:55:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>94cba19bdb915f40262950a45e961946</sys_id>
-        <sys_mod_count>157</sys_mod_count>
+        <sys_mod_count>168</sys_mod_count>
         <sys_name>x_gege9_it4it.DatacardFormApp</sys_name>
         <sys_package display_value="IT4IT" source="x_gege9_it4it">7938d16ddb64d300262950a45e9619c5</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="IT4IT">7938d16ddb64d300262950a45e9619c5</sys_scope>
         <sys_update_name>sys_ui_script_94cba19bdb915f40262950a45e961946</sys_update_name>
-        <sys_updated_by>212743449</sys_updated_by>
-        <sys_updated_on>2019-05-29 14:08:11</sys_updated_on>
+        <sys_updated_by>212613457</sys_updated_by>
+        <sys_updated_on>2019-10-22 19:12:38</sys_updated_on>
         <ui_type>0</ui_type>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>

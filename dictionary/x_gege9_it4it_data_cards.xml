@@ -10,18 +10,20 @@
             </choice>
         </element>
         <element label="Default" max_length="40" name="default" type="boolean"/>
+        <element label="Report" max_length="32" name="general_report" reference="sys_report" reference_qual="created_by_userDYNAMIC90d1921e5f510100a9ad2572f2b477fe^ORuser=Global^EQ" reference_qual_condition="created_by_userDYNAMIC90d1921e5f510100a9ad2572f2b477fe^ORuser=Global^EQ" type="reference"/>
         <element label="Homepage Preference" max_length="32" name="homepage_preference" reference="x_gege9_it4it_homepage_preferences" type="reference"/>
         <element choice="3" default="standard" label="List Type" max_length="40" name="list_type" type="choice">
             <choice>
+                <element inactive_on_update="false" label="Report" value="general_report"/>
                 <element inactive_on_update="false" label="Standard List" value="standard"/>
                 <element inactive_on_update="false" label="Visual Task Board" sequence="100" value="vtb"/>
-                <element inactive_on_update="false" label="Report" sequence="200" value="report"/>
+                <element inactive_on_update="false" label="Shared Report" sequence="200" value="report"/>
             </choice>
         </element>
         <element label="Name" mandatory="true" max_length="40" name="name" type="string"/>
         <element default="0" label="Order" max_length="40" name="order" type="integer"/>
         <element dependent="table" dependent_on_field="table" label="Query Condition" mandatory="true" max_length="4000" name="query_condition" type="conditions" use_dependent_field="true"/>
-        <element label="Report" max_length="32" name="report" reference="sys_report_users_groups" reference_qual="group_idDYNAMICd6435e965f510100a9ad2572f2b47744^ORuser_idDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ" reference_qual_condition="group_idDYNAMICd6435e965f510100a9ad2572f2b47744^ORuser_idDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ" type="reference"/>
+        <element label="Shared Report" max_length="32" name="report" reference="sys_report_users_groups" reference_qual="group_idDYNAMICd6435e965f510100a9ad2572f2b47744^ORuser_idDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ" reference_qual_condition="group_idDYNAMICd6435e965f510100a9ad2572f2b47744^ORuser_idDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ" type="reference"/>
         <element choice="1" label="State" max_length="40" name="state" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Accepted" value="200"/>
@@ -31,9 +33,12 @@
         <element attributes="base_table=task,text_search_only=true" label="Table" max_length="80" name="table" type="table_name"/>
         <element dependent="table" dependent_on_field="table" label="Visual Task Board Lane Field" max_length="80" name="vtb_lane_field" type="field_name" use_dependent_field="true"/>
         <index name="index">
-            <element name="homepage_preference"/>
+            <element name="general_report"/>
         </index>
         <index name="index2">
+            <element name="homepage_preference"/>
+        </index>
+        <index name="index3">
             <element name="report"/>
         </index>
     </element>
