@@ -3,6 +3,7 @@
         <access>public</access>
         <actions_access>false</actions_access>
         <alter_access>false</alter_access>
+        <caller_access/>
         <client_scripts_access>false</client_scripts_access>
         <configuration_access>false</configuration_access>
         <create_access>false</create_access>
@@ -33,7 +34,6 @@
         <sys_update_name>sys_db_object_6eed8ed2dbf85b80d087d8965e96197a</sys_update_name>
         <sys_updated_by>212607632</sys_updated_by>
         <sys_updated_on>2018-03-14 15:18:38</sys_updated_on>
-        <u_geetha/>
         <update_access>false</update_access>
         <user_role display_value="x_gege9_it4it.tutorial_slides_user" name="x_gege9_it4it.tutorial_slides_user">51fdced2dbf85b80d087d8965e961945</user_role>
         <ws_access>true</ws_access>

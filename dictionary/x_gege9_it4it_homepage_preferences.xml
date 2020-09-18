@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Homepage Preferences" max_length="40" name="x_gege9_it4it_homepage_preferences" sizeclass="7314" type="collection">
         <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Release Notes Version Seen" max_length="32" name="release_notes_version_seen" reference="kb_version" type="reference"/>
         <element label="Tabbed Cards" max_length="4000" name="tabbed_cards" type="simple_name_values"/>
         <element display="true" label="User" mandatory="true" max_length="32" name="user" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <index name="index">
+            <element name="release_notes_version_seen"/>
+        </index>
+        <index name="index2">
             <element name="user"/>
         </index>
     </element>

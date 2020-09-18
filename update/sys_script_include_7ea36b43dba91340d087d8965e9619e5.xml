@@ -3,6 +3,7 @@
         <access>package_private</access>
         <active>true</active>
         <api_name>x_gege9_it4it.HomepagePreferenceUtil</api_name>
+        <caller_access/>
         <client_callable>false</client_callable>
         <description>This script include will contain an API with all necesary functions to use with homepage preferences.</description>
         <name>HomepagePreferenceUtil</name>

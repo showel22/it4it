@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_choice action="INSERT_OR_UPDATE" field="list_type" table="x_gege9_it4it_data_cards" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>list_type</element>
+            <name>x_gege9_it4it_data_cards</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2018-03-16 18:07:22</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>98c7490bdbf417003b4f5f2e5e961941</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>list_type</sys_name>
+            <sys_package display_value="IT4IT" source="x_gege9_it4it">7938d16ddb64d300262950a45e9619c5</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="IT4IT">7938d16ddb64d300262950a45e9619c5</sys_scope>
+            <sys_update_name>sys_choice_x_gege9_it4it_data_cards_list_type</sys_update_name>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-03-16 18:07:22</sys_updated_on>
+        </sys_choice_set>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>list_type</element>
@@ -9,14 +27,14 @@
             <language>en</language>
             <name>x_gege9_it4it_data_cards</name>
             <sequence/>
-            <sys_created_by>212613457</sys_created_by>
-            <sys_created_on>2019-10-24 13:15:40</sys_created_on>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2019-10-25 17:28:58</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>2112c3bb1360001c179976dc5144b0c5</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>212613457</sys_updated_by>
-            <sys_updated_on>2019-10-24 14:10:36</sys_updated_on>
+            <sys_id>f2c58d50dbfc88183b4f5f2e5e961942</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2019-10-25 17:28:58</sys_updated_on>
             <value>general_report</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -62,7 +80,7 @@
             <element>list_type</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Shared Report</label>
+            <label>Report</label>
             <language>en</language>
             <name>x_gege9_it4it_data_cards</name>
             <sequence>200</sequence>
@@ -71,28 +89,10 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>ca74e906db2e5308e718d54b5e96193d</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_updated_by>212613457</sys_updated_by>
-            <sys_updated_on>2019-10-24 14:10:24</sys_updated_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2018-06-08 17:28:46</sys_updated_on>
             <value>report</value>
         </sys_choice>
-        <sys_choice_set action="INSERT_OR_UPDATE">
-            <element>list_type</element>
-            <name>x_gege9_it4it_data_cards</name>
-            <sys_class_name>sys_choice_set</sys_class_name>
-            <sys_created_by>system</sys_created_by>
-            <sys_created_on>2018-03-16 18:07:22</sys_created_on>
-            <sys_customer_update>false</sys_customer_update>
-            <sys_id>98c7490bdbf417003b4f5f2e5e961941</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>list_type</sys_name>
-            <sys_package display_value="IT4IT" source="x_gege9_it4it">7938d16ddb64d300262950a45e9619c5</sys_package>
-            <sys_policy/>
-            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-            <sys_scope display_value="IT4IT">7938d16ddb64d300262950a45e9619c5</sys_scope>
-            <sys_update_name>sys_choice_x_gege9_it4it_data_cards_list_type</sys_update_name>
-            <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2018-03-16 18:07:22</sys_updated_on>
-        </sys_choice_set>
     </sys_choice>
 </record_update>

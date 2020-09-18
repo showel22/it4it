@@ -3,7 +3,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="c641756c13588050179976dc5144b0ea">c241756c13588050179976dc5144b0eb</list_id>
+            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="96e585d0dbfc88183b4f5f2e5e961959">c241756c13588050179976dc5144b0eb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -18,7 +18,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>short_description</element>
-            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="c641756c13588050179976dc5144b0ea">c241756c13588050179976dc5144b0eb</list_id>
+            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="96e585d0dbfc88183b4f5f2e5e961959">c241756c13588050179976dc5144b0eb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
@@ -33,7 +33,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>assignment_group</element>
-            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="c641756c13588050179976dc5144b0ea">c241756c13588050179976dc5144b0eb</list_id>
+            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="96e585d0dbfc88183b4f5f2e5e961959">c241756c13588050179976dc5144b0eb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
@@ -48,7 +48,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>assigned_to</element>
-            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="c641756c13588050179976dc5144b0ea">c241756c13588050179976dc5144b0eb</list_id>
+            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="96e585d0dbfc88183b4f5f2e5e961959">c241756c13588050179976dc5144b0eb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
@@ -63,7 +63,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>sprint</element>
-            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="c641756c13588050179976dc5144b0ea">c241756c13588050179976dc5144b0eb</list_id>
+            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="96e585d0dbfc88183b4f5f2e5e961959">c241756c13588050179976dc5144b0eb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
@@ -78,7 +78,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>story_points</element>
-            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="c641756c13588050179976dc5144b0ea">c241756c13588050179976dc5144b0eb</list_id>
+            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="96e585d0dbfc88183b4f5f2e5e961959">c241756c13588050179976dc5144b0eb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
@@ -93,7 +93,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>state</element>
-            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="c641756c13588050179976dc5144b0ea">c241756c13588050179976dc5144b0eb</list_id>
+            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="96e585d0dbfc88183b4f5f2e5e961959">c241756c13588050179976dc5144b0eb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
@@ -108,7 +108,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>priority</element>
-            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="c641756c13588050179976dc5144b0ea">c241756c13588050179976dc5144b0eb</list_id>
+            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="96e585d0dbfc88183b4f5f2e5e961959">c241756c13588050179976dc5144b0eb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>7</position>
@@ -123,7 +123,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>release</element>
-            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="c641756c13588050179976dc5144b0ea">c241756c13588050179976dc5144b0eb</list_id>
+            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="96e585d0dbfc88183b4f5f2e5e961959">c241756c13588050179976dc5144b0eb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>8</position>
@@ -138,7 +138,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>cmdb_ci</element>
-            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="c641756c13588050179976dc5144b0ea">c241756c13588050179976dc5144b0eb</list_id>
+            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="96e585d0dbfc88183b4f5f2e5e961959">c241756c13588050179976dc5144b0eb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>9</position>
@@ -153,7 +153,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>order</element>
-            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="c641756c13588050179976dc5144b0ea">c241756c13588050179976dc5144b0eb</list_id>
+            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="96e585d0dbfc88183b4f5f2e5e961959">c241756c13588050179976dc5144b0eb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>10</position>
@@ -168,7 +168,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>active</element>
-            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="c641756c13588050179976dc5144b0ea">c241756c13588050179976dc5144b0eb</list_id>
+            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="NULL" relationship="NULL" sys_domain="global" view="96e585d0dbfc88183b4f5f2e5e961959">c241756c13588050179976dc5144b0eb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>11</position>
@@ -207,7 +207,7 @@
             <sys_updated_by>212613457</sys_updated_by>
             <sys_updated_on>2019-10-01 18:46:03</sys_updated_on>
             <sys_user/>
-            <view display_value="Rpt4a41f16c13588050179976dc5144b0b6" name="RPT4a41f16c13588050179976dc5144b0b6">c641756c13588050179976dc5144b0ea</view>
+            <view display_value="Rpt4a41f16c13588050179976dc5144b0b6" name="RPT4a41f16c13588050179976dc5144b0b6">96e585d0dbfc88183b4f5f2e5e961959</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

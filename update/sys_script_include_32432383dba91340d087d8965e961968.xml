@@ -3,6 +3,7 @@
         <access>package_private</access>
         <active>true</active>
         <api_name>x_gege9_it4it.DataCardsUtil</api_name>
+        <caller_access/>
         <client_callable>false</client_callable>
         <description>This API will hold the basic logic for performing actions with datacards.</description>
         <name>DataCardsUtil</name>
